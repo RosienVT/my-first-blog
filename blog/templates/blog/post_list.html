@@ -3,15 +3,15 @@
     <title>Dilettante Developer Journey</title>
 </head>
 <body>
+
+{% for post in posts %}
     <div>
-        <h2>Dilettante</h2>
-        <h3><i>noun</i> /ˌdɪl.əˈtæn.ti/</h3>
-        <p>a person who is or seems to be interested in a subject,
-        but whose understanding of it is not very deep or serious.
-        </p>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
     </div>
-    <div>
-        <p><i>Let's change this</i></p>
-    </div>
+
+{% endfor %}
+    
 </body>
 </html>
