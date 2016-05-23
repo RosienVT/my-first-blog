@@ -1,0 +1,28 @@
+{%load staticfiles%}
+<html>
+<head>
+<title>Dilettante Developer Journey</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme-min.css">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<link href="http://fonts.googleapis.com/css?family=Inconsolata|Lobster&subset=latin" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+    <div class="page-header">
+        <h1><a href="/">Dilettante Developer Journey</a></h1>
+        <h3><p align="right"><i>Dilettante:</i></p></h3>
+        <h5><p align="right">\ˈdi-lə-ˌtänt, -ˌtant; ˌdi-lə-ˈ\</p>
+        <p align="right">a person whose interest in an art or in an area of knowledge is not very deep or serious</p></h5>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
