@@ -48,3 +48,7 @@ h2, h4 {
 .post h1 a, h2 a .post h1 a:visited, h2 a:visited {
     color: #FFC800;
 }
+
+.post-text {
+    margin-left: 30px;
+}
