@@ -11,6 +11,9 @@
 </head>
 <body>
     <div class="page-header">
+        {% if user.is_authenticated %}
+        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+       {%  endif %}
         <h1><a href="/">Dilettante Developer Journey</a></h1>
         <h3><p align="right"><i>Dilettante:</i></p></h3>
         <h5><p align="right">\ˈdi-lə-ˌtänt, -ˌtant; ˌdi-lə-ˈ\</p>
